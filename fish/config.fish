@@ -46,7 +46,7 @@ alias ffprobe="ffprobe -hide_banner"
 alias ffplay="ffplay -hide_banner"
 
 # ssh stuff for termux
-if test -f "~/omen_ssh_ip.txt"
+if test -f "$HOME/omen_ssh_ip.txt"
     set omen_ssh_ip = $(cat "~/omen_ssh_ip.txt")
 
     alias omenl="ssh hexa@omen.desktop" # in a LAN context we'll be on my dns server which will resolve it correctly
