@@ -2,9 +2,11 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+if test -d ~/.local/share/.bun/
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+end
 
 function fish_greeting
     # empty greeting
@@ -12,25 +14,33 @@ end
 
 set -g fish_greeting
 
+if test -d ~/.local/share/pnpm/
 # pnpm
 set -gx PNPM_HOME "/home/hexa/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+end
 
 # zoxide
 
-zoxide init --cmd cd fish | source
+if type -q zoxide
+    zoxide init --cmd cd fish | source
+end
 
 # yabridge
 
-export PATH="$PATH:$HOME/.local/share/yabridge"
+if test -d ~/.local/share/yabridge/
+    export PATH="$PATH:$HOME/.local/share/yabridge"
+end
 
-# why
-source ~/miniconda3/etc/fish/conf.d/conda.fish
+if test -d ~/miniconda3/
+    # why can't it do this by itself is beyond me
+    source ~/miniconda3/etc/fish/conf.d/conda.fish
+end
 
-# stupid
+# literally nobody asked for these
 alias ffmpeg="ffmpeg -hide_banner"
 alias ffprobe="ffprobe -hide_banner"
 alias ffplay="ffplay -hide_banner"
