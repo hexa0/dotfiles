@@ -47,7 +47,7 @@ alias ffplay="ffplay -hide_banner"
 
 # ssh stuff for termux
 if test -f "$HOME/omen_ssh_ip.txt"
-    set omen_ssh_ip = $(cat "$HOME/omen_ssh_ip.txt")
+    set omen_ssh_ip $(cat "$HOME/omen_ssh_ip.txt")
 
     alias omenl="ssh hexa@omen.desktop" # in a LAN context we'll be on my dns server which will resolve it correctly
     alias omen="ssh hexa@$omen_ssh_ip" # otherwise we'll have the public ip get used instead which will be stored privately
