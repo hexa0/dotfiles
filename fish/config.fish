@@ -45,12 +45,13 @@ alias ffmpeg="ffmpeg -hide_banner"
 alias ffprobe="ffprobe -hide_banner"
 alias ffplay="ffplay -hide_banner"
 
-# ssh stuff for termux
+# termux specific stuff
 if test -f "$HOME/omen_ssh_ip.txt"
     set omen_ssh_ip $(cat "$HOME/omen_ssh_ip.txt")
 
     alias omenl="ssh hexa@omen.desktop" # in a LAN context we'll be on my dns server which will resolve it correctly
-    alias omen="ssh hexa@$omen_ssh_ip" # otherwise we'll have the public ip get used instead which will be stored privately
+    alias omen="ssh hexa@$omen_ssh_ip -p 23" # otherwise we'll have the public ip get used instead which will be stored privately
+    alias cl=clear
 end
 
 fish_add_path /home/hexa/.spicetify
