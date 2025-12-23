@@ -1,0 +1,1 @@
+/home/hexa/.config/fish
