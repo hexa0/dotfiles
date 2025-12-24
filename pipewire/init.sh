@@ -25,27 +25,27 @@ reset_notification_id() {
 }
 
 send_notification() {
-    local icon="$1"
-    local urgency="$2"
-    local title="$3"
-    local message="$4"
-    local timeout="${5:-0}" # Default to 0 (system default) if not provided
-    
-    # Building the command base
-    local cmd=(notify-send -a "$APP_NAME" -i "$icon" -u "$urgency")
-    
-    # Add timeout if specified
-    if [ "$timeout" -gt 0 ]; then
-        cmd+=("-t" "$timeout")
-    fi
+	local icon="$1"
+	local urgency="$2"
+	local title="$3"
+	local message="$4"
+	local timeout="${5:-0}" # Default to 0 (system default) if not provided
+	
+	# Building the command base
+	local cmd=(notify-send -a "$APP_NAME" -i "$icon" -u "$urgency")
+	
+	# Add timeout if specified
+	if [ "$timeout" -gt 0 ]; then
+		cmd+=("-t" "$timeout")
+	fi
 
-    # Try to replace existing notification if ID exists
-    if [ -n "$NOTIF_ID" ]; then
-        NOTIF_ID=$("${cmd[@]}" "$title" "$message" -r "$NOTIF_ID" -p 2>/dev/null) || \
-        NOTIF_ID=$("${cmd[@]}" "$title" "$message" -p)
-    else
-        NOTIF_ID=$("${cmd[@]}" "$title" "$message" -p)
-    fi
+	# Try to replace existing notification if ID exists
+	if [ -n "$NOTIF_ID" ]; then
+		NOTIF_ID=$("${cmd[@]}" "$title" "$message" -r "$NOTIF_ID" -p 2>/dev/null) || \
+		NOTIF_ID=$("${cmd[@]}" "$title" "$message" -p)
+	else
+		NOTIF_ID=$("${cmd[@]}" "$title" "$message" -p)
+	fi
 }
 
 link_interface_nodes () {
