@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.6'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>true</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+  <LADSPA_PATH>/home/hexa/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa</LADSPA_PATH>
+  <DSSI_PATH>/home/hexa/.dssi:/usr/lib/dssi:/usr/local/lib/dssi</DSSI_PATH>
+  <LV2_PATH>/home/hexa/.lv2:/usr/lib/lv2:/usr/local/lib/lv2</LV2_PATH>
+  <VST2_PATH>/home/hexa/.vst:/usr/lib/vst:/usr/local/lib/vst/home/hexa/.lxvst:/usr/lib/lxvst:/usr/local/lib/lxvst:/home/hexa/.wine/drive_c/Program Files/VstPlugins:/home/hexa/.wine/drive_c/Program Files/VSTPlugins:/home/hexa/.wine/drive_c/Program Files/Steinberg/VstPlugins:/home/hexa/.wine/drive_c/Program Files/Steinberg/VSTPlugins:/home/hexa/.wine/drive_c/Program Files/Common Files/VST2:/home/hexa/.wine/drive_c/Program Files (x86)/VstPlugins:/home/hexa/.wine/drive_c/Program Files (x86)/VSTPlugins:/home/hexa/.wine/drive_c/Program Files (x86)/Steinberg/VstPlugins:/home/hexa/.wine/drive_c/Program Files (x86)/Steinberg/VSTPlugins</VST2_PATH>
+  <VST3_PATH>/home/hexa/.vst3:/usr/lib/vst3:/usr/local/lib/vst3:/home/hexa/.wine/drive_c/Program Files/Common Files/VST3:/home/hexa/.wine/drive_c/Program Files (x86)/Common Files/VST3</VST3_PATH>
+  <SF2_PATH>/home/hexa/.sounds/sf2:/home/hexa/.sounds/sf3:/usr/share/sounds/sf2:/usr/share/sounds/sf3:/usr/share/soundfonts</SF2_PATH>
+  <SFZ_PATH>/home/hexa/.sounds/sfz:/usr/share/sounds/sfz</SFZ_PATH>
+  <JSFX_PATH>/home/hexa/.config/REAPER/Effects</JSFX_PATH>
+  <CLAP_PATH>/home/hexa/.clap:/usr/lib/clap:/usr/local/lib/clap:/home/hexa/.wine/drive_c/Program Files/Common Files/CLAP:/home/hexa/.wine/drive_c/Program Files (x86)/Common Files/CLAP</CLAP_PATH>
+ </EngineSettings>
+
+ <!-- Audio Gain (Stereo) -->
+ <Plugin>
+  <Info>
+   <Type>INTERNAL</Type>
+   <Name>Audio Gain (Stereo)</Name>
+   <Label>audiogain_s</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Gain</Name>
+    <Value>1.75999999046326</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Apply Left</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Apply Right</Name>
+    <Value>1</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- Pro-L 2 -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>Pro-L 2</Name>
+   <Binary>/home/hexa/.vst3/yabridge/FabFilter/FabFilter Pro-L 2.vst3</Binary>
+   <Label>Pro-L 2</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1f9</Options>
+
+   <Chunk>
+RmFiRgIAAAAPAAAARGVmYXVsdCBTZXR0aW5nAAAAAB8AAAAAAPBBAAAAAAAAAAAAAAAADZWtPgAAwD4AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAIA/AACAPwAAAAAAAABAAACAPwAAAAAAAAAAAABgwQAAAAAAAIA/AQAAAAEAAAA=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Denoiser Classic -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>Denoiser Classic</Name>
+   <Binary>/home/hexa/.vst3/Bertom_DenoiserClassic.vst3</Binary>
+   <Label>Denoiser Classic</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x9</Options>
+
+   <Chunk>
+UGFyYW1ldGVycwABAmFjdHVhbExvd0ZyZXEAAQkEAAAAIAAAOUBhY3R1YWxIaWdoRnJlcQABCQQAAAAAAEDPQAEPUEFSQU0AAQJpZAABCAVCWVBBU1MAdmFs
+dWUAAQkEAAAAAAAAAAAAUEFSQU0AAQJpZAABCAVIRkJJQVMAdmFsdWUAAQkEAAAAAAAAAAAAUEFSQU0AAQJpZAABCgVISUdIRlJFUQB2YWx1ZQABCQQAAAAA
+AEDPQABQQVJBTQABAmlkAAEKBUhQRU5BQkxFAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQkFTE9XRlJFUQB2YWx1ZQABCQQAAAAgAAA5QABQQVJB
+TQABAmlkAAEKBUxQRU5BQkxFAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQQFUjEAdmFsdWUAAQkEAAAAwMzMI8AAUEFSQU0AAQJpZAABBAVSMgB2
+YWx1ZQABCQQAAABgZmYewABQQVJBTQABAmlkAAEEBVIzAHZhbHVlAAEJBAAAAMDMzCDAAFBBUkFNAAECaWQAAQQFUjQAdmFsdWUAAQkEAAAAAAAAKcAAUEFS
+QU0AAQJpZAABBAVSNQB2YWx1ZQABCQQAAABgZmYowABQQVJBTQABAmlkAAEEBVI2AHZhbHVlAAEJBAAAAGBm5jfAAFBBUkFNAAECaWQAAQgFU1RMSU5LAHZh
+bHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQMFVAB2YWx1ZQABCQQAAABgZoZSwABFZGl0b3JTdGF0ZQAAAAAAAAAAAAAAAAAAAAAAAABKVUNFUHJpdmF0
+ZURhdGE=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Clear -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Clear</Name>
+   <Binary>/home/hexa/.vst/yabridge/Clear.so</Binary>
+   <UniqueID>1668048242</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <Chunk>
+VkMyIb0CAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8R295b1BhcmFtZXRlcj48UEFSQU0gaWQ9ImFtYmllbmNlRGlmZiIgdmFs
+dWU9IjAuMCIvPjxQQVJBTSBpZD0iYW1iaWVuY2VHYWluIiB2YWx1ZT0iLTIwLjI5OTk5OTIzNzA2MDU1Ii8+PFBBUkFNIGlkPSJhbWJpZW5jZU11dGUiIHZh
+bHVlPSIwLjAiLz48UEFSQU0gaWQ9ImFtYmllbmNlU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0iZWNvTW9kZSIgdmFsdWU9IjAuMCIvPjxQQVJBTSBp
+ZD0ibWluaU1vZGUiIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9Im1vbm9TdGVyZW8iIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlRGlmZiIgdmFsdWU9
+IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VEcnlHYWluIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZU11dGUiIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9
+InZvaWNlUmV2ZXJiRGlmZiIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VSZXZlcmJNdXRlIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZVJl
+dmVyYlNvbG8iIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VXZXRHYWluIiB2YWx1ZT0i
+LTcuODk5OTk3NzExMTgxNjQxIi8+PEdsb2JhbFZhcmlhYmxlcyBTcGVjdHJ1bVNpZGVNYXJnaW49IjE0Ii8+PC9Hb3lvUGFyYW1ldGVyPgA=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- GGate -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>GGate</Name>
+   <Binary>/home/hexa/.vst/GGate.so</Binary>
+   <UniqueID>1735999846</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x5</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Thresh</Name>
+    <Value>0.222499996423721</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Fade</Name>
+    <Value>0.393939405679703</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Attack</Name>
+    <Value>0.0666666701436043</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <Patchbay>
+  <Connection>
+   <Source>Audio Input:Left</Source>
+   <Target>Audio Gain (Stereo):input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Audio Input:Right</Source>
+   <Target>Audio Gain (Stereo):input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Audio Gain (Stereo):output_1</Source>
+   <Target>Pro-L 2:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Audio Gain (Stereo):output_2</Source>
+   <Target>Pro-L 2:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Pro-L 2:output_1</Source>
+   <Target>Denoiser Classic:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Pro-L 2:output_2</Source>
+   <Target>Denoiser Classic:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Denoiser Classic:output_1</Source>
+   <Target>Clear:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Denoiser Classic:output_2</Source>
+   <Target>Clear:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Clear:output_1</Source>
+   <Target>GGate:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Clear:output_2</Source>
+   <Target>GGate:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>GGate:output_1</Source>
+   <Target>Audio Output:Left</Target>
+  </Connection>
+  <Connection>
+   <Source>GGate:output_2</Source>
+   <Target>Audio Output:Right</Target>
+  </Connection>
+  <Connection>
+   <Source>Midi Input:Capture 1</Source>
+   <Target>Midi Output:Playback 1</Target>
+  </Connection>
+  <Positions>
+   <Position x1="957" y1="55" pluginId="4">
+    <Name>GGate</Name>
+   </Position>
+   <Position x1="750" y1="55" pluginId="3">
+    <Name>Clear</Name>
+   </Position>
+   <Position x1="598" y1="51" pluginId="2">
+    <Name>Denoiser Classic</Name>
+   </Position>
+   <Position x1="398" y1="54" pluginId="1">
+    <Name>Pro-L 2</Name>
+   </Position>
+   <Position x1="205" y1="54" pluginId="0">
+    <Name>Audio Gain (Stereo)</Name>
+   </Position>
+   <Position x1="1550" y1="1418" x2="2971" y2="2328">
+    <Name>Midi Output</Name>
+   </Position>
+   <Position x1="2794" y1="2327" x2="1943" y2="1355">
+    <Name>Midi Input</Name>
+   </Position>
+   <Position x1="1550" y1="1281" x2="1145" y2="56">
+    <Name>Audio Output</Name>
+   </Position>
+   <Position x1="18" y1="56" x2="1952" y2="1200">
+    <Name>Audio Input</Name>
+   </Position>
+  </Positions>
+ </Patchbay>
+</CARLA-PROJECT>

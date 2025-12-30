@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.6'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- Clear -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Clear</Name>
+   <Binary>/home/hexa/.vst/yabridge/Clear.so</Binary>
+   <UniqueID>1668048242</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CurrentProgramIndex>1</CurrentProgramIndex>
+   <CurrentProgramName>0. Default</CurrentProgramName>
+
+   <Chunk>
+VkMyIXYCAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8R295b1BhcmFtZXRlcj48UEFSQU0gaWQ9ImFtYmllbmNlRGlmZiIgdmFs
+dWU9IjAuMCIvPjxQQVJBTSBpZD0iYW1iaWVuY2VHYWluIiB2YWx1ZT0iLTM2LjkwMDAwMTUyNTg3ODkxIi8+PFBBUkFNIGlkPSJhbWJpZW5jZU11dGUiIHZh
+bHVlPSIwLjAiLz48UEFSQU0gaWQ9ImFtYmllbmNlU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0iZWNvTW9kZSIgdmFsdWU9IjEuMCIvPjxQQVJBTSBp
+ZD0ibW9ub1N0ZXJlbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VEaWZmIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZURyeUdhaW4iIHZh
+bHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlTXV0ZSIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VSZXZlcmJEaWZmIiB2YWx1ZT0iMC4wIi8+PFBB
+UkFNIGlkPSJ2b2ljZVJldmVyYk11dGUiIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlUmV2ZXJiU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0i
+dm9pY2VTb2xvIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZVdldEdhaW4iIHZhbHVlPSItNjAuMCIvPjxHbG9iYWxWYXJpYWJsZXMvPjwvR295b1Bh
+cmFtZXRlcj4A
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Denoiser -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>Denoiser</Name>
+   <Binary>/home/hexa/.vst3/yabridge/Bertom_Denoiser.vst3</Binary>
+   <Label>Denoiser</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x9</Options>
+
+   <Chunk>
+UGFyYW1ldGVycwABA3YxbW9kZQABAQNhY3R1YWxMb3dGcmVxAAEJBAAAAAAAAFlAYWN0dWFsSGlnaEZyZXEAAQkEAAAAAACIw0ABDlBBUkFNAAECaWQAAQgF
+QllQQVNTAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQQFRzEAdmFsdWUAAQkEAAAAoMQgoD8AUEFSQU0AAQJpZAABBAVHMgB2YWx1ZQABCQQAAACg
+xCCgPwBQQVJBTQABAmlkAAEEBUczAHZhbHVlAAEJBAAAAKDEIKA/AFBBUkFNAAECaWQAAQQFRzQAdmFsdWUAAQkEAAAAoMQgoD8AUEFSQU0AAQJpZAABBAVH
+NQB2YWx1ZQABCQQAAACgxCCgPwBQQVJBTQABAmlkAAEIBUhGQklBUwB2YWx1ZQABCQQAAAAAAAAAAABQQVJBTQABAmlkAAEKBUhJR0hGUkVRAHZhbHVlAAEJ
+BAAAAAAAiMNAAFBBUkFNAAECaWQAAQUFSFBGAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQkFTE9XRlJFUQB2YWx1ZQABCQQAAAAAAABZQABQQVJB
+TQABAmlkAAEFBUxQRgB2YWx1ZQABCQQAAAAAAAAAAABQQVJBTQABAmlkAAELBVJBVElPTU9ERQB2YWx1ZQABCQQAAAAAAAAAAABQQVJBTQABAmlkAAEIBVNU
+TElOSwB2YWx1ZQABCQQAAAAAAAAAAABQQVJBTQABAmlkAAEIBVRIUkVTSAB2YWx1ZQABCQQAAABA4XrEPwAAAAAAAAAAAAAAAAAAAAAASlVDRVByaXZhdGVE
+YXRh
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Pro-Q 3 -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>Pro-Q 3</Name>
+   <Binary>/home/hexa/.vst3/yabridge/FabFilter/FabFilter Pro-Q 3.vst3</Binary>
+   <Label>Pro-Q 3</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1f9</Options>
+
+   <Chunk>
+RkZCUwEAAABmAQAAAACAPwAAgD+2PNZAuJyCQAAAAAAAAIA/AACAP4Ou1D4AAAAAAACAPwAAAEAAAIA/AAAAAAAAgD8AAIA/SB7XQOAUPMAAAAAAAACAPwAA
+gD+A2Dc/AAAAAAAAgD8AAABAAACAPwAAAAAAAIA/AACAP18RYkEYvJxAAAAAAAAAgD8AAIA/MmjvPgAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD+BgD1B
+YH3oQAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAA
+AAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAA
+AACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAA
+gD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/
+2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAA
+gD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/
+AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAA
+AAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAA
+AACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAA
+AEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/
+AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAA
+AAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAA
+AAAAAAAAgD8AAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIC/AACAPwAAAEAAAABAAABAQAAAAAAAAIA/AACAPwAAAEAAAAAAYGamvwAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAEZGcHIBAAAAAAAAAA==
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- GGate -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>GGate (2)</Name>
+   <Binary>/home/hexa/.vst/GGate.so</Binary>
+   <UniqueID>1735999846</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x5</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Thresh</Name>
+    <Value>0.172499999403954</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Fade</Name>
+    <Value>0.393939405679703</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Attack</Name>
+    <Value>0.0666666701436043</Value>
+   </Parameter>
+
+   <CurrentProgramIndex>1</CurrentProgramIndex>
+   <CurrentProgramName>Basic gate</CurrentProgramName>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FL</Source>
+   <Target>InterfaceDualJackL:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FR</Source>
+   <Target>InterfaceDualJackR:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>InterfaceDualJackL:capture_MONO</Source>
+   <Target>Clear:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>InterfaceDualJackR:capture_MONO</Source>
+   <Target>Clear:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-95555-32:output_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-95555-32:output_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-95555-32:output_LFE</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_LFE</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-95555-33:output_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-95555-33:output_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-95555-33:output_LFE</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_LFE</Target>
+  </Connection>
+  <Connection>
+   <Source>Clear:output_1</Source>
+   <Target>Denoiser:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Clear:output_2</Source>
+   <Target>Denoiser:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>GGate (2):output_1</Source>
+   <Target>SM57 (Carla Processed):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>GGate (2):output_2</Source>
+   <Target>SM57 (Carla Processed):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Pro-Q 3:output_1</Source>
+   <Target>GGate (2):input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Pro-Q 3:output_2</Source>
+   <Target>GGate (2):input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Denoiser:output_1</Source>
+   <Target>Pro-Q 3:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Denoiser:output_2</Source>
+   <Target>Pro-Q 3:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Positions>
+   <Position x1="1296" y1="1353" x2="2041" y2="1274">
+    <Name>E2x2 Analog Surround 2.1</Name>
+   </Position>
+   <Position x1="1570" y1="1022" pluginId="0">
+    <Name>Clear</Name>
+   </Position>
+   <Position x1="1700" y1="1022" pluginId="1">
+    <Name>Denoiser</Name>
+   </Position>
+   <Position x1="1830" y1="1022" pluginId="2">
+    <Name>Pro-Q 3</Name>
+   </Position>
+   <Position x1="1960" y1="1021" pluginId="3">
+    <Name>GGate (2)</Name>
+   </Position>
+  </Positions>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

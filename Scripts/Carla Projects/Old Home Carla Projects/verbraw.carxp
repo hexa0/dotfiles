@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.6'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <!-- ValhallaVintageVerb -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>ValhallaVintageVerb</Name>
+   <Binary>/home/hexa/.vst3/yabridge/ValhallaDSP/ValhallaVintageVerb.vst3</Binary>
+   <Label>ValhallaVintageVerb</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x9</Options>
+
+   <Chunk>
+VnN0VwAAAAgAAAABAAAAAENjbksAAALkRkJDaAAAAAJ2ZWUzAAICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkxWQzIh
+BwIAADw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9IlVURi04Ij8+IDxWYWxoYWxsYVZpbnRhZ2VWZXJiIHBsdWdpblZlcnNpb249IjIuMi4wIiBwcmVz
+ZXROYW1lPSJEZWZhdWx0IiBNaXg9IjEuMCIgUHJlRGVsYXk9IjAuMjUiIERlY2F5PSIwLjQyMDQ4MDMxMDkxNjkwMDYiIFNpemU9IjEuMCIgQXR0YWNrPSIw
+LjUiIEJhc3NNdWx0PSIwLjYyMzAzODc2ODc2ODMxMDUiIEJhc3NYb3Zlcj0iMC40NDQ3MDExMDUzNTYyMTY0IiBIaWdoU2hlbGY9IjAuMCIgSGlnaEZyZXE9
+IjAuNSIgRWFybHlEaWZmdXNpb249IjEuMCIgTGF0ZURpZmZ1c2lvbj0iMS4wIiBNb2RSYXRlPSIwLjI0NTQ1NDU2NDY5MDU4OTkiIE1vZERlcHRoPSIwLjM3
+OTk5OTk5NTIzMTYyODQiIEhpZ2hDdXQ9IjAuNTkwNTM4ODU5MzY3MzcwNiIgTG93Q3V0PSIwLjAiIENvbG9yTW9kZT0iMC4zMzMzMzMzNDMyNjc0NDA4IiBS
+ZXZlcmJNb2RlPSIwLjA0MTY2NjY2NzkwODQzMDEiIG1peExvY2s9IjAiIHVpV2lkdGg9IjkzNSIgdWlIZWlnaHQ9IjQzNSIvPgAAAAAAAAAAAEpVQ0VQcml2
+YXRlRGF0YQABAUJ5cGFzcwABAQMAHQAAAAAAAABKVUNFUHJpdmF0ZURhdGE=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FL</Source>
+   <Target>InterfaceDualJackL:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FR</Source>
+   <Target>InterfaceDualJackR:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-7693-32:output_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-7693-32:output_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-7693-32:output_LFE</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_LFE</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-7693-33:output_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-7693-33:output_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-7693-33:output_LFE</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_LFE</Target>
+  </Connection>
+  <Connection>
+   <Source>ValhallaVintageVerb:output_1</Source>
+   <Target>SM57 (Carla Processed):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>ValhallaVintageVerb:output_2</Source>
+   <Target>SM57 (Carla Processed):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>InterfaceDualJackL:monitor_FL</Source>
+   <Target>ValhallaVintageVerb:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>InterfaceDualJackL:monitor_FL</Source>
+   <Target>ValhallaVintageVerb:input_2</Target>
+  </Connection>
+  <Positions>
+   <Position x1="1296" y1="1353" x2="2041" y2="1274">
+    <Name>E2x2 Analog Surround 2.1</Name>
+   </Position>
+   <Position x1="1528" y1="1251">
+    <Name>InterfaceDualJackL</Name>
+   </Position>
+   <Position x1="1729" y1="1195" pluginId="0">
+    <Name>ValhallaVintageVerb</Name>
+   </Position>
+  </Positions>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

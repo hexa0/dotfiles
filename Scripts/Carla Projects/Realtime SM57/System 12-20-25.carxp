@@ -1,0 +1,991 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.6'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>true</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- Carla-Patchbay -->
+ <Plugin>
+  <Info>
+   <Type>INTERNAL</Type>
+   <Name>micBay</Name>
+   <Label>carlapatchbay</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Gain</Name>
+    <Value>1.75999999046326</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Apply Left</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Apply Right</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Gain</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Style</Name>
+    <Value>5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Lookahead</Name>
+    <Value>0.180000007152557</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Attack</Name>
+    <Value>0.40722382068634</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Release</Name>
+    <Value>0.387798249721527</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Channel Link Transients</Name>
+    <Value>0.375</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Channel Link Release</Name>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Channel Link Center</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Channel Link LFE</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Oversampling</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>True Peak Limiting</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Dithering</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Noise Shaping</Name>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Filter DC Offset</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Side Chain Triggering</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Unity Gain</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Audition Limiting</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Bypass</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Output Level</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Lock Output</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Receive Midi</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Show Advanced</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>True Peak Metering</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Display Mode</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Meter Scale</Name>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Loudness Time Scale</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Loudness Meter Scale</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Loudness Meter Origin</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Loudness Meter Target</Name>
+    <Value>-14</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Loudness Integrated Peak Time Sc</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Loudness Recording</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Internal</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Internal</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Internal</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Pitch Bend</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Channel Pressure</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>53</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>55</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>56</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>58</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>59</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>60</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>61</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>62</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>63</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>64</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>65</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>66</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>67</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>68</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>69</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>70</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>71</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>72</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>73</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>74</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>75</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>76</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>77</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>78</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>79</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>80</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>81</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>82</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>83</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>84</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>85</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>86</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>87</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>88</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>89</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>90</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>91</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>92</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>93</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>94</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>95</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>96</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>97</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>98</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>99</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>100</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>101</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>102</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>103</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>104</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>105</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>106</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>107</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>108</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>109</Index>
+    <Name>MIDI CC</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/chunk</Type>
+    <Key>State</Key>
+    <Value>
+&lt;?xml version=&apos;1.0&apos; encoding=&apos;UTF-8&apos;?&gt;
+&lt;!DOCTYPE CARLA-PROJECT&gt;
+&lt;CARLA-PROJECT VERSION=&apos;2.6&apos;&gt;
+ &lt;EngineSettings&gt;
+  &lt;ForceStereo&gt;false&lt;/ForceStereo&gt;
+  &lt;PreferPluginBridges&gt;true&lt;/PreferPluginBridges&gt;
+  &lt;PreferUiBridges&gt;true&lt;/PreferUiBridges&gt;
+  &lt;UIsAlwaysOnTop&gt;false&lt;/UIsAlwaysOnTop&gt;
+  &lt;MaxParameters&gt;200&lt;/MaxParameters&gt;
+  &lt;UIBridgesTimeout&gt;4000&lt;/UIBridgesTimeout&gt;
+  &lt;LADSPA_PATH&gt;/home/hexa/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa&lt;/LADSPA_PATH&gt;
+  &lt;DSSI_PATH&gt;/home/hexa/.dssi:/usr/lib/dssi:/usr/local/lib/dssi&lt;/DSSI_PATH&gt;
+  &lt;LV2_PATH&gt;/home/hexa/.lv2:/usr/lib/lv2:/usr/local/lib/lv2&lt;/LV2_PATH&gt;
+  &lt;VST2_PATH&gt;/home/hexa/.vst:/usr/lib/vst:/usr/local/lib/vst/home/hexa/.lxvst:/usr/lib/lxvst:/usr/local/lib/lxvst:/home/hexa/.wine/drive_c/Program Files/VstPlugins:/home/hexa/.wine/drive_c/Program Files/VSTPlugins:/home/hexa/.wine/drive_c/Program Files/Steinberg/VstPlugins:/home/hexa/.wine/drive_c/Program Files/Steinberg/VSTPlugins:/home/hexa/.wine/drive_c/Program Files/Common Files/VST2:/home/hexa/.wine/drive_c/Program Files (x86)/VstPlugins:/home/hexa/.wine/drive_c/Program Files (x86)/VSTPlugins:/home/hexa/.wine/drive_c/Program Files (x86)/Steinberg/VstPlugins:/home/hexa/.wine/drive_c/Program Files (x86)/Steinberg/VSTPlugins&lt;/VST2_PATH&gt;
+  &lt;VST3_PATH&gt;/home/hexa/.vst3:/usr/lib/vst3:/usr/local/lib/vst3:/home/hexa/.wine/drive_c/Program Files/Common Files/VST3:/home/hexa/.wine/drive_c/Program Files (x86)/Common Files/VST3&lt;/VST3_PATH&gt;
+  &lt;SF2_PATH&gt;/home/hexa/.sounds/sf2:/home/hexa/.sounds/sf3:/usr/share/sounds/sf2:/usr/share/sounds/sf3:/usr/share/soundfonts&lt;/SF2_PATH&gt;
+  &lt;SFZ_PATH&gt;/home/hexa/.sounds/sfz:/usr/share/sounds/sfz&lt;/SFZ_PATH&gt;
+  &lt;JSFX_PATH&gt;/home/hexa/.config/REAPER/Effects&lt;/JSFX_PATH&gt;
+  &lt;CLAP_PATH&gt;/home/hexa/.clap:/usr/lib/clap:/usr/local/lib/clap:/home/hexa/.wine/drive_c/Program Files/Common Files/CLAP:/home/hexa/.wine/drive_c/Program Files (x86)/Common Files/CLAP&lt;/CLAP_PATH&gt;
+ &lt;/EngineSettings&gt;
+
+ &lt;!-- Audio Gain (Stereo) --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;INTERNAL&lt;/Type&gt;
+   &lt;Name&gt;Audio Gain (Stereo)&lt;/Name&gt;
+   &lt;Label&gt;audiogain_s&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Gain&lt;/Name&gt;
+    &lt;Value&gt;1.75999999046326&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Apply Left&lt;/Name&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Apply Right&lt;/Name&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Pro-L 2 --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;VST3&lt;/Type&gt;
+   &lt;Name&gt;Pro-L 2&lt;/Name&gt;
+   &lt;Binary&gt;/home/hexa/.vst3/yabridge/FabFilter/FabFilter Pro-L 2.vst3&lt;/Binary&gt;
+   &lt;Label&gt;Pro-L 2&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x1f9&lt;/Options&gt;
+
+   &lt;Chunk&gt;
+RmFiRgIAAAAPAAAARGVmYXVsdCBTZXR0aW5nAAAAAB8AAAAAAPBBAAAAAAAAAAAAAAAADZWtPgAAwD4AAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAIA/AACAPwAAAAAAAABAAACAPwAAAAAAAAAAAABgwQAAAAAAAIA/AQAAAAEAAAA=
+   &lt;/Chunk&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Denoiser Classic --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;VST3&lt;/Type&gt;
+   &lt;Name&gt;Denoiser Classic&lt;/Name&gt;
+   &lt;Binary&gt;/home/hexa/.vst3/Bertom_DenoiserClassic.vst3&lt;/Binary&gt;
+   &lt;Label&gt;Denoiser Classic&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x9&lt;/Options&gt;
+
+   &lt;Chunk&gt;
+UGFyYW1ldGVycwABAmFjdHVhbExvd0ZyZXEAAQkEAAAAIAAAOUBhY3R1YWxIaWdoRnJlcQABCQQAAAAAAEDPQAEPUEFSQU0AAQJpZAABCAVCWVBBU1MAdmFs
+dWUAAQkEAAAAAAAAAAAAUEFSQU0AAQJpZAABCAVIRkJJQVMAdmFsdWUAAQkEAAAAAAAAAAAAUEFSQU0AAQJpZAABCgVISUdIRlJFUQB2YWx1ZQABCQQAAAAA
+AEDPQABQQVJBTQABAmlkAAEKBUhQRU5BQkxFAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQkFTE9XRlJFUQB2YWx1ZQABCQQAAAAgAAA5QABQQVJB
+TQABAmlkAAEKBUxQRU5BQkxFAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQQFUjEAdmFsdWUAAQkEAAAAwMzMI8AAUEFSQU0AAQJpZAABBAVSMgB2
+YWx1ZQABCQQAAABgZmYewABQQVJBTQABAmlkAAEEBVIzAHZhbHVlAAEJBAAAAMDMzCDAAFBBUkFNAAECaWQAAQQFUjQAdmFsdWUAAQkEAAAAAAAAKcAAUEFS
+QU0AAQJpZAABBAVSNQB2YWx1ZQABCQQAAABgZmYowABQQVJBTQABAmlkAAEEBVI2AHZhbHVlAAEJBAAAAGBm5jfAAFBBUkFNAAECaWQAAQgFU1RMSU5LAHZh
+bHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQMFVAB2YWx1ZQABCQQAAABgZoZSwABFZGl0b3JTdGF0ZQAAAAAAAAAAAAAAAAAAAAAAAABKVUNFUHJpdmF0
+ZURhdGE=
+   &lt;/Chunk&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Clear --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;VST2&lt;/Type&gt;
+   &lt;Name&gt;Clear&lt;/Name&gt;
+   &lt;Binary&gt;/home/hexa/.vst/yabridge/Clear.so&lt;/Binary&gt;
+   &lt;UniqueID&gt;1668048242&lt;/UniqueID&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0xd&lt;/Options&gt;
+
+   &lt;Chunk&gt;
+VkMyIaUCAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8R295b1BhcmFtZXRlcj48UEFSQU0gaWQ9ImFtYmllbmNlRGlmZiIgdmFs
+dWU9IjAuMCIvPjxQQVJBTSBpZD0iYW1iaWVuY2VHYWluIiB2YWx1ZT0iLTIwLjI5OTk5OTIzNzA2MDU1Ii8+PFBBUkFNIGlkPSJhbWJpZW5jZU11dGUiIHZh
+bHVlPSIwLjAiLz48UEFSQU0gaWQ9ImFtYmllbmNlU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0iZWNvTW9kZSIgdmFsdWU9IjAuMCIvPjxQQVJBTSBp
+ZD0ibWluaU1vZGUiIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9Im1vbm9TdGVyZW8iIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlRGlmZiIgdmFsdWU9
+IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VEcnlHYWluIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZU11dGUiIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9
+InZvaWNlUmV2ZXJiRGlmZiIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VSZXZlcmJNdXRlIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZVJl
+dmVyYlNvbG8iIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VXZXRHYWluIiB2YWx1ZT0i
+LTcuODk5OTk3NzExMTgxNjQxIi8+PEdsb2JhbFZhcmlhYmxlcy8+PC9Hb3lvUGFyYW1ldGVyPgA=
+   &lt;/Chunk&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- GGate --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;VST2&lt;/Type&gt;
+   &lt;Name&gt;GGate&lt;/Name&gt;
+   &lt;Binary&gt;/home/hexa/.vst/GGate.so&lt;/Binary&gt;
+   &lt;UniqueID&gt;1735999846&lt;/UniqueID&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x5&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Thresh&lt;/Name&gt;
+    &lt;Value&gt;0.222499996423721&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Fade&lt;/Name&gt;
+    &lt;Value&gt;0.393939405679703&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Attack&lt;/Name&gt;
+    &lt;Value&gt;0.0666666701436043&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;Patchbay&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Midi Input:Capture 1&lt;/Source&gt;
+   &lt;Target&gt;Midi Output:Playback 1&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Audio Input:Left&lt;/Source&gt;
+   &lt;Target&gt;Audio Gain (Stereo):input_1&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Audio Input:Right&lt;/Source&gt;
+   &lt;Target&gt;Audio Gain (Stereo):input_2&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Audio Gain (Stereo):output_1&lt;/Source&gt;
+   &lt;Target&gt;Pro-L 2:input_1&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Audio Gain (Stereo):output_2&lt;/Source&gt;
+   &lt;Target&gt;Pro-L 2:input_2&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Pro-L 2:output_1&lt;/Source&gt;
+   &lt;Target&gt;Denoiser Classic:input_1&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Pro-L 2:output_2&lt;/Source&gt;
+   &lt;Target&gt;Denoiser Classic:input_2&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Denoiser Classic:output_1&lt;/Source&gt;
+   &lt;Target&gt;Clear:input_1&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Denoiser Classic:output_2&lt;/Source&gt;
+   &lt;Target&gt;Clear:input_2&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Clear:output_1&lt;/Source&gt;
+   &lt;Target&gt;GGate:input_1&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;Clear:output_2&lt;/Source&gt;
+   &lt;Target&gt;GGate:input_2&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;GGate:output_1&lt;/Source&gt;
+   &lt;Target&gt;Audio Output:Left&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Connection&gt;
+   &lt;Source&gt;GGate:output_2&lt;/Source&gt;
+   &lt;Target&gt;Audio Output:Right&lt;/Target&gt;
+  &lt;/Connection&gt;
+  &lt;Positions&gt;
+   &lt;Position x1=&quot;957&quot; y1=&quot;55&quot; pluginId=&quot;4&quot;&gt;
+    &lt;Name&gt;GGate&lt;/Name&gt;
+   &lt;/Position&gt;
+   &lt;Position x1=&quot;750&quot; y1=&quot;55&quot; pluginId=&quot;3&quot;&gt;
+    &lt;Name&gt;Clear&lt;/Name&gt;
+   &lt;/Position&gt;
+   &lt;Position x1=&quot;598&quot; y1=&quot;51&quot; pluginId=&quot;2&quot;&gt;
+    &lt;Name&gt;Denoiser Classic&lt;/Name&gt;
+   &lt;/Position&gt;
+   &lt;Position x1=&quot;398&quot; y1=&quot;54&quot; pluginId=&quot;1&quot;&gt;
+    &lt;Name&gt;Pro-L 2&lt;/Name&gt;
+   &lt;/Position&gt;
+   &lt;Position x1=&quot;205&quot; y1=&quot;54&quot; pluginId=&quot;0&quot;&gt;
+    &lt;Name&gt;Audio Gain (Stereo)&lt;/Name&gt;
+   &lt;/Position&gt;
+   &lt;Position x1=&quot;1550&quot; y1=&quot;1418&quot; x2=&quot;2971&quot; y2=&quot;2328&quot;&gt;
+    &lt;Name&gt;Midi Output&lt;/Name&gt;
+   &lt;/Position&gt;
+   &lt;Position x1=&quot;2794&quot; y1=&quot;2327&quot; x2=&quot;1943&quot; y2=&quot;1355&quot;&gt;
+    &lt;Name&gt;Midi Input&lt;/Name&gt;
+   &lt;/Position&gt;
+   &lt;Position x1=&quot;1550&quot; y1=&quot;1281&quot; x2=&quot;1145&quot; y2=&quot;56&quot;&gt;
+    &lt;Name&gt;Audio Output&lt;/Name&gt;
+   &lt;/Position&gt;
+   &lt;Position x1=&quot;18&quot; y1=&quot;56&quot; x2=&quot;1952&quot; y2=&quot;1200&quot;&gt;
+    &lt;Name&gt;Audio Input&lt;/Name&gt;
+   &lt;/Position&gt;
+  &lt;/Positions&gt;
+ &lt;/Patchbay&gt;
+&lt;/CARLA-PROJECT&gt;
+
+    </Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>micBay:output_1</Source>
+   <Target>SM57 (Carla Processed):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>micBay:output_2</Source>
+   <Target>SM57 (Carla Processed):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 (IN1):capture_MONO</Source>
+   <Target>micBay:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 (IN1):capture_MONO</Source>
+   <Target>micBay:input_2</Target>
+  </Connection>
+  <Positions>
+   <Position x1="113" y1="158" x2="1099" y2="239">
+    <Name>E2x2 Analog Surround 2.1</Name>
+   </Position>
+   <Position x1="837" y1="239">
+    <Name>Game Audio</Name>
+   </Position>
+   <Position x1="390" y1="86">
+    <Name>E2x2 (IN1 L)</Name>
+   </Position>
+   <Position x1="415" y1="407">
+    <Name>E2x2 (IN2 R)</Name>
+   </Position>
+   <Position x1="831" y1="134">
+    <Name>SM57 (Carla Processed)</Name>
+   </Position>
+   <Position x1="628" y1="172">
+    <Name>Soundboard Audio</Name>
+   </Position>
+   <Position x1="839" y1="335">
+    <Name>Chat Audio</Name>
+   </Position>
+   <Position x1="282" y1="767" x2="561" y2="766">
+    <Name>Midi-Bridge</Name>
+   </Position>
+   <Position x1="282" y1="810" x2="561" y2="809">
+    <Name>BLE MIDI 1</Name>
+   </Position>
+   <Position x1="628" y1="76" pluginId="0">
+    <Name>micBay</Name>
+   </Position>
+  </Positions>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

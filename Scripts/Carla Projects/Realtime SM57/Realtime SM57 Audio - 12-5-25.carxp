@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.6'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>400</MaxParameters>
+  <UIBridgesTimeout>16000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- Pro-L 2 -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>Pro-L 2</Name>
+   <Binary>/home/hexa/.vst3/yabridge/FabFilter/FabFilter Pro-L 2.vst3</Binary>
+   <Label>Pro-L 2</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1f9</Options>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <Chunk>
+RmFiRgIAAAAPAAAARGVmYXVsdCBTZXR0aW5nAAAAAB8AAACWfOpBAAAAAAAAAAAAAAAAAAAAAArXIzwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAABAAACAPwAAAAAAAAAAAABgwQAAAAAAAIA/AQAAAAEAAAA=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Denoiser Classic -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>Denoiser Classic</Name>
+   <Binary>/home/hexa/.vst3/Bertom_DenoiserClassic.vst3</Binary>
+   <Label>Denoiser Classic</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x9</Options>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <Chunk>
+UGFyYW1ldGVycwABAmFjdHVhbExvd0ZyZXEAAQkEAAAAIAAAOUBhY3R1YWxIaWdoRnJlcQABCQQAAAAAAEDPQAEPUEFSQU0AAQJpZAABCAVCWVBBU1MAdmFs
+dWUAAQkEAAAAAAAAAAAAUEFSQU0AAQJpZAABCAVIRkJJQVMAdmFsdWUAAQkEAAAAAAAAAAAAUEFSQU0AAQJpZAABCgVISUdIRlJFUQB2YWx1ZQABCQQAAAAA
+AEDPQABQQVJBTQABAmlkAAEKBUhQRU5BQkxFAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQkFTE9XRlJFUQB2YWx1ZQABCQQAAAAgAAA5QABQQVJB
+TQABAmlkAAEKBUxQRU5BQkxFAHZhbHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQQFUjEAdmFsdWUAAQkEAAAAwMzMI8AAUEFSQU0AAQJpZAABBAVSMgB2
+YWx1ZQABCQQAAABgZmYewABQQVJBTQABAmlkAAEEBVIzAHZhbHVlAAEJBAAAAMDMzCDAAFBBUkFNAAECaWQAAQQFUjQAdmFsdWUAAQkEAAAAAAAAKcAAUEFS
+QU0AAQJpZAABBAVSNQB2YWx1ZQABCQQAAABgZmYowABQQVJBTQABAmlkAAEEBVI2AHZhbHVlAAEJBAAAAGBm5jfAAFBBUkFNAAECaWQAAQgFU1RMSU5LAHZh
+bHVlAAEJBAAAAAAAAAAAAFBBUkFNAAECaWQAAQMFVAB2YWx1ZQABCQQAAABgZoZSwABFZGl0b3JTdGF0ZQAAAAAAAAAAAAAAAAAAAAAAAABKVUNFUHJpdmF0
+ZURhdGE=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Clear -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Clear</Name>
+   <Binary>/home/hexa/.vst/yabridge/Clear.so</Binary>
+   <UniqueID>1668048242</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CurrentProgramIndex>1</CurrentProgramIndex>
+   <CurrentProgramName>0. Default</CurrentProgramName>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <Chunk>
+VkMyIaUCAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8R295b1BhcmFtZXRlcj48UEFSQU0gaWQ9ImFtYmllbmNlRGlmZiIgdmFs
+dWU9IjAuMCIvPjxQQVJBTSBpZD0iYW1iaWVuY2VHYWluIiB2YWx1ZT0iLTIwLjI5OTk5OTIzNzA2MDU1Ii8+PFBBUkFNIGlkPSJhbWJpZW5jZU11dGUiIHZh
+bHVlPSIwLjAiLz48UEFSQU0gaWQ9ImFtYmllbmNlU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0iZWNvTW9kZSIgdmFsdWU9IjAuMCIvPjxQQVJBTSBp
+ZD0ibW9ub1N0ZXJlbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VEaWZmIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZURyeUdhaW4iIHZh
+bHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlTXV0ZSIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VSZXZlcmJEaWZmIiB2YWx1ZT0iMC4wIi8+PFBB
+UkFNIGlkPSJ2b2ljZVJldmVyYk11dGUiIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlUmV2ZXJiU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0i
+dm9pY2VTb2xvIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZVdldEdhaW4iIHZhbHVlPSItNy44OTk5OTc3MTExODE2NDEiLz48UEFSQU0gaWQ9Im1p
+bmlNb2RlIiB2YWx1ZT0iMC4wIi8+PEdsb2JhbFZhcmlhYmxlcy8+PC9Hb3lvUGFyYW1ldGVyPgA=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Pro-Q 3 -->
+ <Plugin>
+  <Info>
+   <Type>VST3</Type>
+   <Name>Pro-Q 3</Name>
+   <Binary>/home/hexa/.vst3/yabridge/FabFilter/FabFilter Pro-Q 3.vst3</Binary>
+   <Label>Pro-Q 3</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1f9</Options>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+
+   <Chunk>
+RkZCUwEAAABmAQAAAACAPwAAgD/ZFWBBcApeQAAAAAAAAIA/AACAP7h0/z4AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/1v/XQPj/H0EAAAAAAACAPwAA
+gD/hK/A+AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP4ik2kCyPoTBAAAAAAAAgD8AAIA/tVgVPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD+v8atA
+AADwQQAAAAAAAIA/AACAP21yrD4AAIA/AACAPwAAAEAAAIA/AAAAAAAAgD8AAIA/JmlUQZQkCcEAAAAAAACAPwAAgD+E+SA/AAAAAAAAgD8AAABAAACAPwAA
+AAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAA
+AACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAA
+gD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/
+2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAA
+gD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/
+AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAA
+AAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAA
+AACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAA
+AEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAAAAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/
+AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAAAAAAAAAAgD/acx9BAAAAAAAAAAAAAIA/AACAPwAAAD8AAAAAAACAPwAAAEAAAIA/AAAAAAAAAAAAAIA/2nMfQQAA
+AAAAAAAAAACAPwAAgD8AAAA/AAAAAAAAgD8AAABAAACAPwAAAAAAAAAAAACAP9pzH0EAAAAAAAAAAAAAgD8AAIA/AAAAPwAAAAAAAIA/AAAAQAAAgD8AAAAA
+AAAAAAAAQEAAAIA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAPwAAgD8AAIC/AACAPwAAAEAAAABAAABAQAAAAAAAAIA/AACAPwAAQEAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAEZGcHIBAAAAAAAAAA==
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- GGate -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>GGate (2)</Name>
+   <Binary>/home/hexa/.vst/GGate.so</Binary>
+   <UniqueID>1735999846</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x5</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Thresh</Name>
+    <Value>0.237499997019768</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Fade</Name>
+    <Value>0.393939405679703</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Attack</Name>
+    <Value>0.0666666701436043</Value>
+   </Parameter>
+
+   <CurrentProgramIndex>1</CurrentProgramIndex>
+   <CurrentProgramName>Basic gate</CurrentProgramName>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FL</Source>
+   <Target>E2x2 (IN1 L):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FR</Source>
+   <Target>E2x2 (IN2 R):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 (IN1 L):capture_MONO</Source>
+   <Target>Pro-L 2:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 (IN1 L):capture_MONO</Source>
+   <Target>Pro-L 2:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 (IN1 L):capture_MONO</Source>
+   <Target>OBS:input_MONO</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-1646-32:output_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-1646-32:output_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-1646-32:output_LFE</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_LFE</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-1646-33:output_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-1646-33:output_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>loopback-1646-33:output_LFE</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_LFE</Target>
+  </Connection>
+  <Connection>
+   <Source>GGate (2):output_1</Source>
+   <Target>SM57 (Carla Processed):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>GGate (2):output_2</Source>
+   <Target>SM57 (Carla Processed):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Pro-L 2:output_1</Source>
+   <Target>Denoiser Classic:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Pro-L 2:output_2</Source>
+   <Target>Denoiser Classic:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Denoiser Classic:output_1</Source>
+   <Target>Clear:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Denoiser Classic:output_2</Source>
+   <Target>Clear:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-generic:output_1</Source>
+   <Target>Game Audio:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-generic:output_1</Source>
+   <Target>vencord-screen-share:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-generic:output_2</Source>
+   <Target>Game Audio:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-generic:output_2</Source>
+   <Target>vencord-screen-share:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-dummy:output_1</Source>
+   <Target>Game Audio:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-dummy:output_1</Source>
+   <Target>vencord-screen-share:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-dummy:output_2</Source>
+   <Target>Game Audio:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-dummy:output_2</Source>
+   <Target>vencord-screen-share:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-espeak-ng:output_1</Source>
+   <Target>Game Audio:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-espeak-ng:output_1</Source>
+   <Target>vencord-screen-share:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-espeak-ng:output_2</Source>
+   <Target>Game Audio:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>speech-dispatcher-espeak-ng:output_2</Source>
+   <Target>vencord-screen-share:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Pro-Q 3:output_1</Source>
+   <Target>GGate (2):input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Pro-Q 3:output_2</Source>
+   <Target>GGate (2):input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Clear:output_1</Source>
+   <Target>Pro-Q 3:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Clear:output_2</Source>
+   <Target>Pro-Q 3:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Chromium:output_1</Source>
+   <Target>Voice Chat Audio:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Chromium:output_2</Source>
+   <Target>Voice Chat Audio:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Zen:output_1</Source>
+   <Target>Game Audio:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Zen:output_1</Source>
+   <Target>vencord-screen-share:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Zen:output_2</Source>
+   <Target>Game Audio:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Zen:output_2</Source>
+   <Target>vencord-screen-share:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Chromium-296:output_1</Source>
+   <Target>Game Audio:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Chromium-296:output_2</Source>
+   <Target>Game Audio:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Game Audio:monitor_1</Source>
+   <Target>OBS:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Game Audio:monitor_1</Source>
+   <Target>OBS:input_1-4184</Target>
+  </Connection>
+  <Connection>
+   <Source>Game Audio:monitor_2</Source>
+   <Target>OBS:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Game Audio:monitor_2</Source>
+   <Target>OBS:input_2-4186</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FL</Source>
+   <Target>Chromium input:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FL</Source>
+   <Target>OBS:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FL</Source>
+   <Target>OBS:input_FL-4190</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FR</Source>
+   <Target>Chromium input:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FR</Source>
+   <Target>OBS:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>SM57 (Carla Processed):capture_FR</Source>
+   <Target>OBS:input_FR-4192</Target>
+  </Connection>
+  <Connection>
+   <Source>Voice Chat Audio:monitor_1</Source>
+   <Target>OBS:input_1-4178</Target>
+  </Connection>
+  <Connection>
+   <Source>Voice Chat Audio:monitor_2</Source>
+   <Target>OBS:input_2-4180</Target>
+  </Connection>
+  <Connection>
+   <Source>vencord-screen-share:capture_FL</Source>
+   <Target>Chromium input:input_FL-3784</Target>
+  </Connection>
+  <Connection>
+   <Source>vencord-screen-share:capture_FR</Source>
+   <Target>Chromium input:input_FR-3786</Target>
+  </Connection>
+  <Positions>
+   <Position x1="369" y1="38">
+    <Name>E2x2 (IN1 L)</Name>
+   </Position>
+   <Position x1="370" y1="182">
+    <Name>E2x2 (IN2 R)</Name>
+   </Position>
+   <Position x1="2737" y1="1989">
+    <Name>speech-dispatcher-generic</Name>
+   </Position>
+   <Position x1="2670" y1="2096">
+    <Name>speech-dispatcher-dummy</Name>
+   </Position>
+   <Position x1="1660" y1="384">
+    <Name>Game Audio</Name>
+   </Position>
+   <Position x1="1514" y1="26">
+    <Name>SM57 (Carla Processed)</Name>
+   </Position>
+   <Position x1="1658" y1="465">
+    <Name>Voice Chat Audio</Name>
+   </Position>
+   <Position x1="143" y1="581" x2="422" y2="580">
+    <Name>Midi-Bridge</Name>
+   </Position>
+   <Position x1="143" y1="624" x2="422" y2="623">
+    <Name>BLE MIDI 1</Name>
+   </Position>
+  </Positions>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

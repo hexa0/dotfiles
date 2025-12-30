@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.5'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- Calf Stereo Tools -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Stereo Tools</Name>
+   <URI>http://calf.sourceforge.net/plugins/StereoTools</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input Gain</Name>
+    <Symbol>level_in</Symbol>
+    <Value>4.1360764503479</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output Gain</Name>
+    <Symbol>level_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Balance In</Name>
+    <Symbol>balance_in</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Balance Out</Name>
+    <Symbol>balance_out</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Softclip</Name>
+    <Symbol>softclip</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Mute L</Name>
+    <Symbol>mutel</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Mute R</Name>
+    <Symbol>muter</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Phase L</Name>
+    <Symbol>phasel</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Phase R</Name>
+    <Symbol>phaser</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Mode</Name>
+    <Symbol>mode</Symbol>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>S Level</Name>
+    <Symbol>slev</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>S Bal</Name>
+    <Symbol>sbal</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>M Level</Name>
+    <Symbol>mlev</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>M Pan</Name>
+    <Symbol>mpan</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Stereo Base</Name>
+    <Symbol>stereo_base</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Delay</Name>
+    <Symbol>delay</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>S/C Level</Name>
+    <Symbol>sc_level</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Stereo Phase</Name>
+    <Symbol>stereo_phase</Symbol>
+    <Value>0</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Gate -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Gate</Name>
+   <URI>http://calf.sourceforge.net/plugins/Gate</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Max Gain Reduction</Name>
+    <Symbol>range</Symbol>
+    <Value>1.58490001922473e-05</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Threshold</Name>
+    <Symbol>threshold</Symbol>
+    <Value>0.0141216078773141</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Ratio</Name>
+    <Symbol>ratio</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Attack</Name>
+    <Symbol>attack</Symbol>
+    <Value>20</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Release</Name>
+    <Symbol>release</Symbol>
+    <Value>250</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Makeup Gain</Name>
+    <Symbol>makeup</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Knee</Name>
+    <Symbol>knee</Symbol>
+    <Value>2.82842707633972</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Detection</Name>
+    <Symbol>detection</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Stereo Link</Name>
+    <Symbol>stereo_link</Symbol>
+    <Value>0</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- Clear -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Clear</Name>
+   <Binary>/home/hexa/.vst/yabridge/Clear.so</Binary>
+   <UniqueID>1668048242</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CurrentProgramIndex>1</CurrentProgramIndex>
+   <CurrentProgramName>0. Default</CurrentProgramName>
+
+   <Chunk>
+VkMyIYMCAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8R295b1BhcmFtZXRlcj48UEFSQU0gaWQ9ImFtYmllbmNlRGlmZiIgdmFs
+dWU9IjAuMCIvPjxQQVJBTSBpZD0iYW1iaWVuY2VHYWluIiB2YWx1ZT0iLTI2LjcwMDAwMDc2MjkzOTQ1Ii8+PFBBUkFNIGlkPSJhbWJpZW5jZU11dGUiIHZh
+bHVlPSIwLjAiLz48UEFSQU0gaWQ9ImFtYmllbmNlU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0iZWNvTW9kZSIgdmFsdWU9IjEuMCIvPjxQQVJBTSBp
+ZD0ibW9ub1N0ZXJlbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VEaWZmIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZURyeUdhaW4iIHZh
+bHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlTXV0ZSIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0idm9pY2VSZXZlcmJEaWZmIiB2YWx1ZT0iMC4wIi8+PFBB
+UkFNIGlkPSJ2b2ljZVJldmVyYk11dGUiIHZhbHVlPSIwLjAiLz48UEFSQU0gaWQ9InZvaWNlUmV2ZXJiU29sbyIgdmFsdWU9IjAuMCIvPjxQQVJBTSBpZD0i
+dm9pY2VTb2xvIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2b2ljZVdldEdhaW4iIHZhbHVlPSItMjYuMjk5OTk5MjM3MDYwNTUiLz48R2xvYmFsVmFyaWFi
+bGVzLz48L0dveW9QYXJhbWV0ZXI+AA==
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FL</Source>
+   <Target>Calf Stereo Tools:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>E2x2 Analog Surround 2.1:capture_FR</Source>
+   <Target>Calf Stereo Tools:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Stereo Tools:Out L</Source>
+   <Target>Clear:input_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Stereo Tools:Out R</Source>
+   <Target>Clear:input_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Gate:Out L</Source>
+   <Target>ProcessedOut Audio/Source/Virtual sink:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Gate:Out R</Source>
+   <Target>ProcessedOut Audio/Source/Virtual sink:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Clear:output_1</Source>
+   <Target>Calf Gate:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>Clear:output_2</Source>
+   <Target>Calf Gate:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>Chromium:output_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Chromium:output_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Chromium:output_LFE</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_LFE</Target>
+  </Connection>
+  <Connection>
+   <Source>ProcessedOut Audio/Source/Virtual sink:capture_FL</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>ProcessedOut Audio/Source/Virtual sink:capture_FR</Source>
+   <Target>E2x2 Analog Surround 2.1:playback_FR</Target>
+  </Connection>
+  <Positions>
+   <Position x1="1016" y1="1190" x2="2283" y2="1185">
+    <Name>E2x2 Analog Surround 2.1</Name>
+   </Position>
+   <Position x1="1903" y1="1206">
+    <Name>ProcessedOut Audio/Source/Virtual sink</Name>
+   </Position>
+   <Position x1="474" y1="1087" x2="780" y2="1077">
+    <Name>Midi-Bridge</Name>
+   </Position>
+   <Position x1="474" y1="1161" x2="614" y2="1161">
+    <Name>BLE MIDI 1</Name>
+   </Position>
+   <Position x1="1280" y1="1190" pluginId="0">
+    <Name>Calf Stereo Tools</Name>
+   </Position>
+   <Position x1="1685" y1="1197" pluginId="1">
+    <Name>Calf Gate</Name>
+   </Position>
+   <Position x1="1493" y1="1193" pluginId="2">
+    <Name>Clear</Name>
+   </Position>
+  </Positions>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

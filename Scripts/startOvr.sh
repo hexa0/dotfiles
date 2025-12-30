@@ -1,0 +1,1 @@
+QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qt5/plugins/ /home/hexa/Repositories/OpenVR-AdvancedSettings/bin/linux/AdvancedSettings/AdvancedSettings
