@@ -54,4 +54,22 @@ if test -f "$HOME/omen_ssh_ip.txt"
     alias cl=clear
 end
 
-fish_add_path /home/hexa/.spicetify
+if test -d ~/.spicetify/
+	fish_add_path ~/.spicetify
+end
+
+if test -d ~/.dotnet/tools/
+    fish_add_path ~/.dotnet/tools
+end
+
+if test -d ~/wally/
+    fish_add_path ~/wally
+end
+
+if test -d ~/zap/
+    fish_add_path ~/zap
+end
+
+if test -d ~/.path/
+	fish_add_path ~/.path
+end
