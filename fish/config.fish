@@ -73,3 +73,7 @@ end
 if test -d ~/.path/
 	fish_add_path ~/.path
 end
+
+if test -d ~/.rokit/bin/
+	fish_add_path  ~/.rokit/bin
+end
