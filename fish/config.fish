@@ -77,3 +77,22 @@ end
 if test -d ~/.rokit/bin/
 	fish_add_path  ~/.rokit/bin
 end
+
+if test -d /opt/devkitpro
+    set -gx DEVKITPRO /opt/devkitpro
+    set -gx DEVKITPPC $DEVKITPRO/devkitPPC
+    
+    fish_add_path $DEVKITPRO/tools/bin
+end
+
+if test -d /usr/share/antigravity/
+	# not even sure if this will work but it's completely busted so whatever
+	source /usr/share/antigravity/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration.fish
+
+	function __force_ag_unstick --on-event fish_prompt
+        if set -q _vsc_has_cmd
+            printf "force exit code \e]633;D\a"
+            set -e _vsc_has_cmd
+        end
+    end
+end
