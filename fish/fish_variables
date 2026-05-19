@@ -44,4 +44,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dFFCC66
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/opt/devkitpro/tools/bin\x1e/home/hexa/\x2erokit/bin\x1e/home/hexa/\x2epath\x1e/home/hexa/zap\x1e/home/hexa/wally\x1e/home/hexa/\x2edotnet/tools\x1e/home/hexa/\x2espicetify
+SETUVAR fish_user_paths:/home/hexa/odin\x1e/usr/local/ps2dev/bin\x1e/usr/local/ps2dev/dvp/bin\x1e/usr/local/ps2dev/iop/bin\x1e/usr/local/ps2dev/ee/bin\x1e/opt/devkitpro/tools/bin\x1e/home/hexa/\x2erokit/bin\x1e/home/hexa/\x2epath\x1e/home/hexa/zap\x1e/home/hexa/wally\x1e/home/hexa/\x2edotnet/tools\x1e/home/hexa/\x2espicetify
